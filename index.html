@@ -103,7 +103,7 @@
 
                         <div class="column has-text-centered">
                             <div class="publication-venue">
-                                IEEE VR 2026
+                                IEEE Transactions on Visualization and Computer Graphics (TVCG) 2026
                             </div>
                         </div>
 
@@ -157,7 +157,7 @@
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
-            <div class="columns is-centered has-text-centered">
+            <div class="columns is-centered has-text-centered" style="margin-bottom: 2rem;">
                 <div class="column is-four-fifths">
                     <div class="content has-text-centered">
                         <h2 class="title is-3" style="margin-bottom: 1rem;">TL; DR</h2>
@@ -169,10 +169,22 @@
                     <h2 class="title is-3 has-text-centered">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            We present SceneLinker, a novel approach for...
-                        </p>
-                        <p>
-                            Our method leverages...
+                            We introduce SceneLinker, a novel framework that generates compositional virtual scenes via
+                            a 3D semantic scene graph from RGB sequences.
+                            To adaptively experience Mixed Reality (MR) contents based on each user's space, it is
+                            essential to generate a virtual scene that reflects the real-world layout by compactly
+                            capturing the semantic cues of the surroundings.
+                            Prior works struggled to fully capture the contextual relationship between objects or mainly
+                            focused on synthesizing diverse shapes, making it challenging to generate 3D scenes aligned
+                            with object arrangements.
+                            We address these challenges by designing a graph network with cross-check feature attention
+                            for scene graph prediction and constructing a graph-variational autoencoder (graph-VAE),
+                            which consists of a joint shape and layout block for virtual scene generation.
+                            Experiments on the 3RScan/3DSSG and SG-FRONT datasets demonstrate that our approach
+                            outperforms state-of-the-art methods in both quantitative and qualitative evaluations, even
+                            in complex indoor environments and under challenging scene graph constraints.
+                            Our work enables users to generate new virtual spaces from their physical environments via
+                            scene graphs, allowing them to create spatial MR content.
                         </p>
                     </div>
                 </div>
@@ -197,7 +209,7 @@
     <section class="section">
         <div class="container is-max-desktop">
 
-            <div class="columns is-centered">
+            <div class="columns is-centered" style="margin-bottom: 2rem;">
                 <div class="column is-full-width">
                     <h2 class="title is-3 has-text-centered">Method</h2>
                     <div class="content has-text-justified">
@@ -257,11 +269,8 @@
                                 Commons Attribution-ShareAlike 4.0 International License</a>.
                         </p>
                         <p>
-                            This means you are free to borrow the <a
-                                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-                            we just ask that you link back to this page in the footer.
-                            Please remember to remove the analytics code included in the header of the website which
-                            you do not want on your website.
+                            Website adapted from <a href="https://nerfies.github.io">nerfies</a> and <a
+                                href="https://origen2025.github.io">ORIGEN</a>.
                         </p>
                     </div>
                 </div>
