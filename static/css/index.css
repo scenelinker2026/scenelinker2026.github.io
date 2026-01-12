@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 
 .footer .icon-link {
@@ -47,7 +47,7 @@ body {
 .publication-title {
   font-family: 'Google Sans', sans-serif;
   margin-top: -45px;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .publication-authors {
