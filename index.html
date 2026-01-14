@@ -226,6 +226,21 @@
                             SceneLinker consists of two separate processes: the 3D scene graph prediction network with
                             cross-check attention, and layout-centric 3D scene generation.
                         </p>
+                        <p>
+                            The first phase incrementally constructs segmented maps and point clouds using Visual-SLAM
+                            ORB-SLAM3 from image sequences to estimate 3D entities. These entities form nodes in a
+                            neighbor graph represented by oriented bounding boxes, multi-view images, and point
+                            features. We then apply an attention-based graph network to propagate robust message
+                            features between nodes and refine probability weights, resulting in a global scene graph.
+
+                            In the second phase, the constructed graph and predicted bounding boxes are embedded into
+                            our
+                            scene generation network. Also, we enhance object and relationship
+                            features using a pre-trained CLIP, and assign initial shape
+                            representations to nodes using DeepSDF. Our Graph-VAE with a Joint Shape and
+                            Layout block (JSL block) fuses correlated shape and bounding box features, stably preserving
+                            object positions in graph-based generated scenes.
+                        </p>
                     </div>
                 </div>
             </div>
