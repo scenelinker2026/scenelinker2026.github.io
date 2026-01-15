@@ -219,14 +219,15 @@
                     </div>
                     <div class="content has-text-justified">
                         <p>
-                            Our system's goal is to represent the real world at the graph-level and to generate
+                            <strong>SceneLinker</strong>'s goal is to represent the real world at the graph-level and to
+                            generate
                             context-consistent 3D scenes.
-                            SceneLinker consists of two separate processes: the <strong>3D scene graph prediction
-                                network</strong> with
-                            cross-check attention, and <strong>layout-centric 3D scene generation</strong>.
+                            Our pipeline consists of two separate processes: <strong>(1) 3D scene graph prediction
+                                network with cross-check attention</strong>, and <strong>(2) Layout-centric 3D scene
+                                generation</strong>.
                         </p>
                         <p>
-                            The first phase incrementally constructs segmented maps and point clouds using Visual-SLAM
+                            The first phase incrementally constructs segmented maps and point clouds using
                             ORB-SLAM3 from image sequences to estimate 3D entities. These entities form nodes in a
                             neighbor graph represented by oriented bounding boxes, multi-view images, and point
                             features. We then apply an attention-based graph network to propagate robust message
