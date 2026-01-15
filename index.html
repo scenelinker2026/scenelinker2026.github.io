@@ -221,8 +221,6 @@
                         <p>
                             Our system's goal is to represent the real world at the graph-level and to generate
                             context-consistent 3D scenes.
-                        </p>
-                        <p>
                             SceneLinker consists of two separate processes: the 3D scene graph prediction network with
                             cross-check attention, and layout-centric 3D scene generation.
                         </p>
@@ -232,7 +230,8 @@
                             neighbor graph represented by oriented bounding boxes, multi-view images, and point
                             features. We then apply an attention-based graph network to propagate robust message
                             features between nodes and refine probability weights, resulting in a global scene graph.
-
+                        </p>
+                        <p>
                             In the second phase, the constructed graph and predicted bounding boxes are embedded into
                             our scene generation network. Also, we enhance object and relationship
                             features using a pre-trained CLIP, and assign initial shape
